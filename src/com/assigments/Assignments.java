@@ -16,7 +16,7 @@ public class Assignments {
 		// meet hoe lang het duurt om een record op te vragen
 		// maak 1 record met een andere naam,
 		// meet ook hoe lang het duurt om dit record via zijn key op te vragen...
-		
+		System.out.println("helloworld");
 
 
 
