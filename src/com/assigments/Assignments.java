@@ -1,6 +1,7 @@
 package com.assigments;
 
-import java.util.HashMap;
+import java.util.Arrays;
+//import java.util.HashMap;
 
 public class Assignments {
 
@@ -10,6 +11,10 @@ public class Assignments {
 		// wijzig steeds van 1 record (de laatste, de middelste en de eerste)  de naam
 		// zoek naar dit record en laat zien hoe lang dit duurt.
 		
+		String[] nameArray = {"Justin", "Rafael", "Douglas"}; 
+		for(Long i = (long) 0; i<= 1_000_000L; i++) {
+			System.out.println(Arrays.toString(nameArray));
+		}
 		// assignments 2:
 		// vul een hashmap met 1 miljoen records, gebruik elke keer een unieke id, de naam mag steeds hetzelfde
 		// zijn of mag je veranderen als je dat voor elkaar krijgt
@@ -17,13 +22,13 @@ public class Assignments {
 		// maak 1 record met een andere naam,
 		// meet ook hoe lang het duurt om dit record via zijn key op te vragen...
 		
-		HashMap <String, Integer> namesMap = new HashMap<>();
-		long i;
-		for (i = 0; i <= 1000000L; i++) {
-			namesMap.put("justin douglas", 1);
-			
-			System.out.println(namesMap);
-		}
+//		HashMap <String, Integer> namesMap = new HashMap<>();
+//		long i;
+//		for (i = 0; i <= 1000000L; i++) {
+//			namesMap.put("justin douglas", 1);
+//			
+//			System.out.println(namesMap);
+//		}
 	
 	}
 }
