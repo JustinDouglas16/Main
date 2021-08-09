@@ -1,7 +1,7 @@
 package com.assigments;
 
-import java.util.Arrays;
-//import java.util.HashMap;
+import java.util.ArrayList;
+
 
 public class Assignments {
 
@@ -11,10 +11,22 @@ public class Assignments {
 		// wijzig steeds van 1 record (de laatste, de middelste en de eerste)  de naam
 		// zoek naar dit record en laat zien hoe lang dit duurt.
 		
-		String[] nameArray = {"Justin", "Rafael", "Douglas"}; 
-		for(Long i = (long) 0; i<= 1_000_000L; i++) {
-			System.out.println(Arrays.toString(nameArray));
+		ArrayList<String> myNames = new ArrayList<>();
+		for(int i = 0; i < 1_000_000; i++) 
+		{
+			myNames.add("Justin");
+			myNames.add(1, "Nicole");
+			
 		}
+		System.out.println(myNames.contains("Nicole"));
+		
+		
+		
+		
+//		String[] nameArray = {"Justin", "Rafael", "Douglas"}; 
+//		for(Long i = (long) 0; i<= 1_000_000L; i++) {
+//			System.out.println(Arrays.toString(nameArray));
+//		}
 		// assignments 2:
 		// vul een hashmap met 1 miljoen records, gebruik elke keer een unieke id, de naam mag steeds hetzelfde
 		// zijn of mag je veranderen als je dat voor elkaar krijgt
