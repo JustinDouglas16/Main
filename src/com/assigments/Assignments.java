@@ -1,7 +1,7 @@
 package com.assigments;
 
 //import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 
 public class Assignments {
@@ -11,12 +11,7 @@ public class Assignments {
 		// vul een array met 1 miljoen records (allemaal zelfde naam)
 		// wijzig steeds van 1 record (de laatste, de middelste en de eerste)  de naam
 		// zoek naar dit record en laat zien hoe lang dit duurt.
-		
-		String[] nameArray = new String[1_000_000]; 
-		for(int i = 0; i<= nameArray.length - 1; i++) {
-			nameArray[i] = "justin";
-		}
-		System.out.println(Arrays.toString(nameArray));
+//		System.out.println(Arrays.toString(nameArray));
 		
 		
 		
