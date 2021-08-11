@@ -12,14 +12,13 @@ public class Assignments2 {
 		// maak 1 record met een andere naam,
 		// meet ook hoe lang het duurt om dit record via zijn key op te vragen...
 		
-		HashMap <String, Integer> namesMap = new HashMap<>();		
-		long i;
-		for (i = 0; i <= 1000000L; i++) 
+		HashMap <Integer, String> namesMap = new HashMap<>();		
+		
+		for (int i = 0; i <= 10; i++) 
 		{
-		namesMap.put("justin douglas", 1);
+		namesMap.put(i, "justin");
 			
 			System.out.println(namesMap);
-	
 		}
 	}
 

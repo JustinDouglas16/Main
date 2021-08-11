@@ -4,11 +4,14 @@ public class App {
 	public static void main(String[] args) {
 		
 		String[] nameArray = new String[1_000_000]; 
-		for(int i = 0; i<= nameArray.length - 1; i++) 
+	
+		for (int i = 0; i <= 1000000; i++) 
 		{
-			nameArray[i] = "justin";
+		
+			
+			System.out.println(nameArray);
+	
 		}
-		System.out.println(nameArray);
     }
 
 }
