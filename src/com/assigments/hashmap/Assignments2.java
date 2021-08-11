@@ -14,12 +14,11 @@ public class Assignments2 {
 		
 		HashMap <Integer, String> namesMap = new HashMap<>();		
 		
-		for (int i = 0; i <= 10; i++) 
+		for (int i = 1; i <= 1000; i++) 
 		{
 		namesMap.put(i, "justin");
 			
-			System.out.println(namesMap);
 		}
+		System.out.println(namesMap);
 	}
-
 }
