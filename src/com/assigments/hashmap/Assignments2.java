@@ -17,6 +17,7 @@ public class Assignments2 {
 		for (int i = 1; i <= 1000; i++) 
 		{
 		namesMap.put(i, "justin");
+		namesMap.put(1001, "gianni");
 			
 		}
 		System.out.println(namesMap);
