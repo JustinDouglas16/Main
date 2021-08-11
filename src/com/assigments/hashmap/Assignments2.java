@@ -1,4 +1,4 @@
-package com.assigments;
+package com.assigments.hashmap;
 
 import java.util.HashMap;
 
