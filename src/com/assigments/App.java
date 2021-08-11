@@ -8,6 +8,7 @@ public class App {
 		{
 			nameArray[i] = "justin";
 		}
+		System.out.println(nameArray);
     }
 
 }
