@@ -1,6 +1,8 @@
 package com.assignments2;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 //
 // Assignment 1: Maak een lijst van 50 atleten.
@@ -30,50 +32,29 @@ public class Atleet {
 		return voorNaam;
 	}
 
-
-
-
 	public void setVoorNaam(String voorNaam) {
 		this.voorNaam = voorNaam;
 	}
-
-
-
 
 	public String getAchterNaam() {
 		return achterNaam;
 	}
 
-
-
-
 	public void setAchterNaam(String achterNaam) {
 		this.achterNaam = achterNaam;
 	}
-
-
-
 
 	public LocalDate getGeboorteDatum() {
 		return geboorteDatum;
 	}
 
-
-
-
 	public void setGeboorteDatum(LocalDate geboorteDatum) {
 		this.geboorteDatum = geboorteDatum;
 	}
 
-
-
-
 	public Sport getSport() {
 		return sport;
 	}
-
-
-
 
 	public void setSport(Sport sport) {
 		this.sport = sport;
@@ -114,11 +95,15 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 
 	// main method voor het uitprinten van de output 
 	public static void main(String[] args) {
-		Atleet atleet = new Atleet("Justin", "Douglas", LocalDate.of(1990, 6, 1), Sport.ATLETIEK);
-		System.out.println("Atleet: " + atleet.voorNaam + " " + atleet.achterNaam + " " + 
-		"Leeftijd: " + atleet.getAge() + " " + 
-				"Sport: " + atleet.sport);
-
+		
+//creer een list waar all the atleten gaan voorkomen 
+		List<Atleet> atleten = new ArrayList<Atleet>();
+		
+		atleten.add(new Atleet("Justin", "Douglas", LocalDate.of(1990, 7, 13),Sport.ATLETIEK));
+		atleten.add(new Atleet("Harry", "Potter", LocalDate.of(1990, 5, 1), Sport.VOETBAL));
+		
+		System.out.println(atleten);
+//		System.out.println("Atleet: " + atleten.get(voorNaam) + " " + atleten.achterNaam + " " + "Leeftijd: " + atleten.getAge() + " " + "Sport: " + atleten.sport);
 	}
 
 }
