@@ -86,6 +86,19 @@ public class Atleet {
 			LocalDate diff = now.minusYears(geboorteDatum.getYear());
 			return diff.getYear();
 		}
+		
+		
+// stackeroverflow mogelijke oplossing voor accuraat leeftijd aangeving
+//		public class AgeCalculator {
+//
+//		    public static int calculateAge(LocalDate birthDate, LocalDate currentDate) {
+//		        if ((birthDate != null) && (currentDate != null)) {
+//		            return Period.between(birthDate, currentDate).getYears();
+//		        } else {
+//		            return 0;
+//		        }
+//		    }
+//		}
 	
 
 // note: als ik sport ga veranderen later naar een sport type moet rekening houden dat ik overal waar sport is de type naar sport zetten
