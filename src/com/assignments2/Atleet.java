@@ -79,6 +79,14 @@ public class Atleet {
 		this.sport = sport;
 	}
 	
+	
+	// bepaal de leeftijd
+		public int getAge() {
+			LocalDate now = LocalDate.now();
+			LocalDate diff = now.minusYears(geboorteDatum.getYear());
+			return diff.getYear();
+		}
+	
 
 // note: als ik sport ga veranderen later naar een sport type moet rekening houden dat ik overal waar sport is de type naar sport zetten
 public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport sport) {
@@ -94,7 +102,9 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 	// main method voor het uitprinten van de output 
 	public static void main(String[] args) {
 		Atleet atleet = new Atleet("Justin", "Douglas", LocalDate.of(1990, 6, 1), Sport.ATLETIEK);
-		System.out.println("Atleet: " + atleet.voorNaam + " " + atleet.achterNaam + " " + atleet.geboorteDatum + " " + atleet.sport);
+		System.out.println("Atleet: " + atleet.voorNaam + " " + atleet.achterNaam + " " + 
+		"Leeftijd: " + atleet.getAge() + " " + 
+				"Sport: " + atleet.sport);
 
 	}
 
