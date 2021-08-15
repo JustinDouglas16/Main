@@ -14,12 +14,14 @@ import java.time.LocalDate;
 
 
 public class Atleet {
-	
+
+// data members of the class
 // variabels gedeclareerd om later in methods gebruikt te worden
+	public enum Sport {BAANWIELRENNEN, ATLETIEK, ZWEMMEN, BOKSEN, ZEILEN, VOETBAL};
 	private String voorNaam;
 	private String achterNaam;
     private LocalDate geboorteDatum;
-    private String sport;
+    private Sport sport;
     
     
     
@@ -66,32 +68,33 @@ public class Atleet {
 
 
 
-	public String getSport() {
+	public Sport getSport() {
 		return sport;
 	}
 
 
 
 
-	public void setSport(String sport) {
+	public void setSport(Sport sport) {
 		this.sport = sport;
 	}
+	
 
-// note: als ik sport ga veranderen later naar een sport type moet reken9ing houden dat ik overal waar sport is de type naar sport zetten
-public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, String sport) {
+// note: als ik sport ga veranderen later naar een sport type moet rekening houden dat ik overal waar sport is de type naar sport zetten
+public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport sport) {
 		super();
 		this.voorNaam = voorNaam;
 		this.achterNaam = achterNaam;
 		this.geboorteDatum = geboorteDatum;
 		this.sport = sport;
 	}
-
-
+//Atleet atleet = new Atleet("Justin", "Douglas", LocalDate.of(1990, 6, 1), Sport.ATLETIEK);
 
 
 	// main method voor het uitprinten van de output 
 	public static void main(String[] args) {
-//		System.out.println();
+		Atleet atleet = new Atleet("Justin", "Douglas", LocalDate.of(1990, 6, 1), Sport.ATLETIEK);
+		System.out.println("Atleet: " + atleet.voorNaam + " " + atleet.achterNaam + " " + atleet.geboorteDatum + " " + atleet.sport);
 
 	}
 
