@@ -3,6 +3,7 @@ package com.assignments2;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 //
 // Assignment 1: Maak een lijst van 50 atleten.
@@ -100,9 +101,18 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 		List<Atleet> atleten = new ArrayList<Atleet>();
 		
 		// voor elke value dat in je list gaat voor komen moet een variable maken voor elke waarde en dan in een loop plaatsen zodat die het automatisch vult ermee
+		String[] voorNamen = {"justin", "george", "john", "jair"};// 4 elementen dus er moet aangegven worden hoeveel er in de for loop moet komen
+		String[] achterNamen = {"rodriguez", "messi", "wayne", "lopez"}; // 4 elementen
 		
-		atleten.add(new Atleet("Justin", "Douglas", LocalDate.of(1990, 7, 13),Sport.ATLETIEK));
-		atleten.add(new Atleet("Harry", "Potter", LocalDate.of(1990, 5, 1), Sport.VOETBAL));
+		for (int i = 0; i <= 50; i++ ) {
+			Random random = new Random();
+			int naamNummer = random.nextInt(4);
+		}
+
+		
+		
+//		atleten.add(new Atleet("Justin", "Douglas", LocalDate.of(1990, 7, 13),Sport.ATLETIEK));
+//		atleten.add(new Atleet("Harry", "Potter", LocalDate.of(1990, 5, 1), Sport.VOETBAL));
 		
 		System.out.println(atleten);
 //		System.out.println("Atleet: " + atleten.get(voorNaam) + " " + atleten.achterNaam + " " + "Leeftijd: " + atleten.getAge() + " " + "Sport: " + atleten.sport);
