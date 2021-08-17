@@ -104,9 +104,16 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 		String[] voorNamen = {"justin", "george", "john", "jair"};// 4 elementen dus er moet aangegven worden hoeveel er in de for loop moet komen
 		String[] achterNamen = {"rodriguez", "messi", "wayne", "lopez"}; // 4 elementen
 		
+		
 		for (int i = 0; i <= 50; i++ ) {
 			Random random = new Random();
 			int naamNummer = random.nextInt(4);
+			int achterNaamNummer = random.nextInt(4);
+	        // houdt de dagen variable
+			int geboorteDatum = random.nextInt(28) +1;
+			int geboorteMaand = random.nextInt(12) + 1;
+			int geboorteJaar = random.nextInt(2005 - 1990) + 1990;
+			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], null, null);
 		}
 
 		
