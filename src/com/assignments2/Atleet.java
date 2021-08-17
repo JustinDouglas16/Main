@@ -99,6 +99,8 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 //creer een list waar all the atleten gaan voorkomen 
 		List<Atleet> atleten = new ArrayList<Atleet>();
 		
+		// voor elke value dat in je list gaat voor komen moet een variable maken voor elke waarde en dan in een loop plaatsen zodat die het automatisch vult ermee
+		
 		atleten.add(new Atleet("Justin", "Douglas", LocalDate.of(1990, 7, 13),Sport.ATLETIEK));
 		atleten.add(new Atleet("Harry", "Potter", LocalDate.of(1990, 5, 1), Sport.VOETBAL));
 		
