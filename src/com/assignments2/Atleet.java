@@ -100,7 +100,7 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 //creer een list waar all the atleten gaan voorkomen 
 		List<Atleet> atleten = new ArrayList<Atleet>();
 		
-		// voor elke value dat in je list gaat voor komen moet een variable maken voor elke waarde en dan in een loop plaatsen zodat die het automatisch vult ermee
+// voor elke value dat in je list gaat voor komen moet een variable maken voor elke waarde en dan in een loop plaatsen zodat die het automatisch vult ermee
 		String[] voorNamen = {"justin", "george", "john", "jair"};// 4 elementen dus er moet aangegven worden hoeveel er in de for loop moet komen
 		String[] achterNamen = {"rodriguez", "messi", "wayne", "lopez"}; // 4 elementen
 		
@@ -109,17 +109,13 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 			Random random = new Random();
 			int naamNummer = random.nextInt(4);
 			int achterNaamNummer = random.nextInt(4);
-	        // houdt de dagen variable
-			int geboorteDatum = random.nextInt(28) +1;
+// houdt de dagen variable
+			int geboorteDag = random.nextInt(28) +1;
 			int geboorteMaand = random.nextInt(12) + 1;
 			int geboorteJaar = random.nextInt(2005 - 1990) + 1990;
-			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], null, null);
+			
+			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], LocalDate.of(geboorteJaar, geboorteMaand, geboorteDag), null);
 		}
-
-		
-		
-//		atleten.add(new Atleet("Justin", "Douglas", LocalDate.of(1990, 7, 13),Sport.ATLETIEK));
-//		atleten.add(new Atleet("Harry", "Potter", LocalDate.of(1990, 5, 1), Sport.VOETBAL));
 		
 		System.out.println(atleten);
 //		System.out.println("Atleet: " + atleten.get(voorNaam) + " " + atleten.achterNaam + " " + "Leeftijd: " + atleten.getAge() + " " + "Sport: " + atleten.sport);
