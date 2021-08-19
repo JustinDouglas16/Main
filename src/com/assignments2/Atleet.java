@@ -63,11 +63,11 @@ public class Atleet {
 	
 	
 	// bepaal de leeftijd
-		public int getAge() {
-			LocalDate now = LocalDate.now();
-			LocalDate diff = now.minusYears(geboorteDatum.getYear());
-			return diff.getYear();
-		}
+//		public int getAge() {
+//			LocalDate now = LocalDate.now();
+//			LocalDate diff = now.minusYears(geboorteDatum.getYear());
+//			return diff.getYear();
+//		}
 		
 		
 // stackeroverflow mogelijke oplossing voor accuraat leeftijd aangeving
@@ -130,6 +130,7 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 			} else if(ranGetal == 5) {
 				nieuwSportArray = Sport.ZWEMMEN;
 			}
+			
 			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], LocalDate.of(geboorteJaar, geboorteMaand, geboorteDag), nieuwSportArray);
 		}
 		
