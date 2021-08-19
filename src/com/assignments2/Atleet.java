@@ -109,12 +109,28 @@ public Atleet(String voorNaam, String achterNaam, LocalDate geboorteDatum, Sport
 			Random random = new Random();
 			int naamNummer = random.nextInt(4);
 			int achterNaamNummer = random.nextInt(4);
-// houdt de dagen variable
+            
+			// houdt de dagen variable
 			int geboorteDag = random.nextInt(28) +1;
 			int geboorteMaand = random.nextInt(12) + 1;
 			int geboorteJaar = random.nextInt(2005 - 1990) + 1990;
-			
-			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], LocalDate.of(geboorteJaar, geboorteMaand, geboorteDag), null);
+			// kiest elke keer een ander sport
+			Sport nieuwSportArray = null;
+			int ranGetal = random.nextInt(6);
+			if(ranGetal == 0) {
+				nieuwSportArray = Sport.BAANWIELRENNEN;
+			}else if(ranGetal == 1) {
+				nieuwSportArray = Sport.ATLETIEK;
+			} else if(ranGetal == 2) {
+				nieuwSportArray = Sport.BOKSEN;
+			} else if(ranGetal == 3) {
+				nieuwSportArray = Sport.VOETBAL;
+			} else if(ranGetal == 4) {
+				nieuwSportArray = Sport.ZEILEN;
+			} else if(ranGetal == 5) {
+				nieuwSportArray = Sport.ZWEMMEN;
+			}
+			Atleet atleet = new Atleet(voorNamen[naamNummer], achterNamen[achterNaamNummer], LocalDate.of(geboorteJaar, geboorteMaand, geboorteDag), nieuwSportArray);
 		}
 		
 		System.out.println(atleten);
